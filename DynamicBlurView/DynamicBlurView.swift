@@ -26,7 +26,7 @@ open class DynamicBlurView: UIView {
             return .global(priority: .high)
         }
     }()
-    private var renderingTarget: UIView? {
+    open var renderingTarget: UIView? {
         if isDeepRendering {
             return window
         } else {
